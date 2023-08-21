@@ -6,9 +6,25 @@ By this point, we are expecting you to have Crawless installed and running well 
 
 ## Using the IDE
 
-Crawless, like any other IDE, essentially is a text editor that gathers very specific extra features together in the same environment allowing both you as a manager and developer to get to your goals quickly without compromising productivity by having all necesarry tools at hand.
+Crawless, like any other IDE, essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necesarry tools at hand.
 
 ### User Interface
+
+The user interface consists of three main regions.
+
+![Group 1](https://github.com/corneliububuruzovici/crawless-academy/assets/130640080/efaf7113-c207-4098-b16f-57ee8ef8f1d1)
+
+1. Activity Bar
+   - qwe
+   - qwe
+2. Side Bar
+   - ww
+   - ee
+3. Editor Groups
+   - rr
+   - tt
+
+#### 
 
 ### Welcome Home
 
