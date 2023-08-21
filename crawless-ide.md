@@ -12,7 +12,7 @@ Crawless, like any other IDE, essentially is a text editor with extra features, 
 
 The user interface consists of three main regions.
 
-![Group 1](https://github.com/corneliububuruzovici/crawless-academy/assets/130640080/efaf7113-c207-4098-b16f-57ee8ef8f1d1)
+![Group 1](https://github.com/corneliububuruzovici/crawless-academy/assets/130640080/8e9da125-67b8-4a36-8c49-d16586cfe52b)
 
 1. Activity Bar
    - qwe
