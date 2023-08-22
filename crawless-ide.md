@@ -1,12 +1,12 @@
 # Crawless in action
 
-#### The following is a comprehensive guide on getting started and becoming proficient with the Crawless IDE.
+> The following is a comprehensive guide on getting started and becoming proficient with the Crawless IDE.
 
 By this point, we are expecting you to have Crawless installed and running well on your system.
 
 ## Using the IDE
 
-Crawless, like any other IDE, essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necesarry tools at hand.
+> Crawless, like any other IDE, essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necesarry tools at hand.
 
 ### User Interface
 
@@ -14,15 +14,13 @@ The user interface consists of three main regions.
 
 ![Group 1](https://github.com/corneliububuruzovici/crawless-academy/assets/130640080/8e9da125-67b8-4a36-8c49-d16586cfe52b)
 
-1. Activity Bar
-   - qwe
-   - qwe
-2. Side Bar
-   - ww
-   - ee
-3. Editor Groups
-   - rr
-   - tt
+#### Activity Bar
+
+In the far left side you find the `Activity Bar` where you may switch between sections in the `Side Bar`, `Connect to Edge`, and configure the IDE to your preference.
+
+#### Side Bar
+
+#### Editor Groups
 
 #### 
 
