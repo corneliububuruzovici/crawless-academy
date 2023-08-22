@@ -1,4 +1,4 @@
-# Crawless in Action
+# Crawless in action
 
 #### The following is a comprehensive guide on getting started and becoming proficient with the Crawless IDE.
 
