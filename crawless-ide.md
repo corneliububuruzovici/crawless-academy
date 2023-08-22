@@ -6,25 +6,39 @@ By this point, we are expecting you to have Crawless installed and running well 
 
 ## Using the IDE
 
-> Crawless, like any other IDE, essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necesarry tools at hand.
+> Crawless, like any other IDE (integrated development environment), essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necesarry tools at hand.
 
 ### User Interface
 
-The user interface consists of three main regions.
+The user interface consists of three main areas.
 
-![Group 1](https://github.com/corneliububuruzovici/crawless-academy/assets/130640080/8e9da125-67b8-4a36-8c49-d16586cfe52b)
+![01](assets/01.jpg)
 
 #### Activity Bar
 
-In the far left side you find the `Activity Bar` where you may switch between sections in the `Side Bar`, `Connect to Edge`, and configure the IDE to your preference.
+In the far left side you find the `Activity Bar` which lets you switch between views, set preferences, and `Connect to Edge`.
+
+> Switching to a view in the `Activity Bar` will open the corresponding navigation in the `Side Bar`.
+
+> `Connect to Edge` is a feature that allows you to connect to a Crawless Edge instance, and use it as a remote execution environment for your projects.
 
 #### Side Bar
 
-#### Editor Groups
+Next is `Side Bar` which contains a more detailed navigation and actions for the current view.
 
-#### 
+#### View Container
 
-### Welcome Home
+The `View Container` is where the content of the current view is shown.
+
+### Views
+
+#### Home
+
+#### Projects
+
+#### Store
+
+#### Documentation
 
 As soon as you open Crawless you shall see the Welcome screen, but let me explain all the menus and buttons before diving into the actual screens.
 
