@@ -10,9 +10,9 @@ By this point, we are expecting you to have Crawless installed and running well 
 
 ### User Interface
 
-The user interface consists of three main areas.
+> The user interface consists of three main areas, the activity bar, the sidebar, and the view container.
 
-![01](assets/01.jpg)
+![user-interface](assets/user-interface.jpg)
 
 #### Activity Bar
 
@@ -34,7 +34,25 @@ The `View Container` is where the content of the current view is shown.
 
 #### Home
 
+> Home view is the default view that you see when you open Crawless.
+
+It contains the following sections:
+
+> `Welcome` - the fastest way to access your recent projects, community, and get help.
+
+![welcome](assets/welcome.jpg)
+
+> `Edge Statistics` - the summary of your Edge instances computational resources usage.
+
+![edge-statistics](assets/edge-statistics.jpg)
+
+> `Dashboards` - a finer grained collection of metrics for your projects and instances.
+
+![dashboards](assets/dashboards.jpg)
+
 #### Projects
+
+![projects](assets/projects.jpg)
 
 #### Store
 
