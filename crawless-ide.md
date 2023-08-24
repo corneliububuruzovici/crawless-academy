@@ -62,16 +62,20 @@ For detailed documentation on automation workflows, please refer to the [Automat
 
 #### Store
 
-> The `Store` is where you may find and install Crawless tools and extensions, but also get ready workflows and task to bootstrap your ideas.
+> The `Store` is where you may find and install Crawless tools and extensions, but also get ready workflows and tasks to bootstrap your ideas.
 
 ![store](assets/store.jpg)
 
 #### Documentation
 
-> The `Documentation` view is where one quickly accesses the necessary information on how to operate the Crawless IDE and use the automation API provided by it in your workflows and tasks.
+> The `Documentation` view is where one quickly accesses the necessary information on how to operate the Crawless IDE and use the automation API provided by it in your workflows.
 
 ![documentation](assets/documentation.jpg)
 
 ## Automation Workflows
+
+> In this section we will explore the automation workflows, and how to use them to achieve your goals.
+
+
 
 ## Best Practices
