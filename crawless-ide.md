@@ -34,7 +34,7 @@ The `View Container` is where the content of the current view is shown.
 
 #### Home
 
-> Home view is the default view that you see when you open Crawless.
+> `Home` view serves as a starting point for your work in Crawless, get quickly to your projects, and find useful links and information.
 
 It contains the following sections:
 
@@ -52,14 +52,26 @@ It contains the following sections:
 
 #### Projects
 
+> `Projects` view is where you create and organize your personal and shared projects containing automation workflows.
+
 ![projects](assets/projects.jpg)
+
+Here you can create a new project, or import an existing one and if necessary export it to a file, or share it with your collaborators.
+
+For detailed documentation on automation workflows, please refer to the [Automation Workflows](#automation-workflows) section.
 
 #### Store
 
+> The `Store` is where you may find and install Crawless tools and extensions, but also get ready workflows and task to bootstrap your ideas.
+
+![store](assets/store.jpg)
+
 #### Documentation
 
-As soon as you open Crawless you shall see the Welcome screen, but let me explain all the menus and buttons before diving into the actual screens.
+> The `Documentation` view is where one quickly accesses the necessary information on how to operate the Crawless IDE and use the automation API provided by it in your workflows and tasks.
 
-First of all, you have the sidebar
+![documentation](assets/documentation.jpg)
+
+## Automation Workflows
 
 ## Best Practices
