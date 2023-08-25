@@ -30,6 +30,8 @@ Next is `Side Bar` which contains a more detailed navigation and actions for the
 
 The `View Container` is where the content of the current view is shown.
 
+Move on to the following chapters to learn more about the content for each view.
+
 ### Views
 
 #### Home
