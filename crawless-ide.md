@@ -2,7 +2,15 @@
 
 > The following is a comprehensive guide on getting started and becoming proficient with the Crawless IDE.
 
-By this point, we are expecting you to have Crawless installed and running well on your system.
+- [Using the IDE](#using-the-ide)
+  - [User Interface](#user-interface)
+  - [Views](#views)
+    - [Home](#home)
+    - [Projects](#projects)
+    - [Store](#store)
+    - [Documentation](#documentation)
+- [Automation](#automation)
+- [Best Practices](#best-practices)
 
 ## Using the IDE
 
@@ -36,48 +44,47 @@ Move on to the following chapters to learn more about the content for each view.
 
 #### Home
 
-> `Home` view serves as a starting point for your work in Crawless, get quickly to your projects, and find useful links and information.
+> The `Home` view serves as a starting point for your work in Crawless, get quickly to your projects, and find useful links and information.
 
 It contains the following sections:
 
-> `Welcome` - the fastest way to access your recent projects, community, and get help.
+- **Welcome** - the fastest way to access your recent projects, community, and get help.
+- **Edge Statistics** - the summary of your Edge instances computational resources usage.
+- **Dashboards** - a finer grained collection of metrics to monitor your workflows.
 
-![welcome](assets/welcome.jpg)
-
-> `Edge Statistics` - the summary of your Edge instances computational resources usage.
-
-![edge-statistics](assets/edge-statistics.jpg)
-
-> `Dashboards` - a finer grained collection of metrics for your projects and instances.
-
-![dashboards](assets/dashboards.jpg)
+<figure>
+    <img src="assets/dashboards.gif" alt="Dashboards" style="width: 100%;">
+    <figcaption align="center"><b>Setting up and using a dashboard to quickly monitor your workflows</b></figcaption>
+</figure>
 
 #### Projects
 
-> `Projects` view is where you create and organize your personal and shared projects containing automation workflows.
+> A project is a collection of workflows and storages.
 
-![projects](assets/projects.jpg)
+> A workflow is a collection of tasks, that are executed in a specific order, and may depend on each other or run in a parallel queue.
 
-Here you can create a new project, or import an existing one and if necessary export it to a file, or share it with your collaborators.
+> A task is a piece of code that performs a specific action, and may be written in any programming language supported by Crawless via its API.
 
-For detailed documentation on automation workflows, please refer to the [Automation Workflows](#automation-workflows) section.
+> A storage is where we optionally store any data collected during the process of our workflow, and may be a database, a file, or a cloud storage.
+
+Please, refer to the [Automation](#automation) section for more information on how to create and manage your projects.
 
 #### Store
 
-> The `Store` is where you may find and install Crawless tools and extensions, but also get ready workflows and tasks to bootstrap your ideas.
-
-![store](assets/store.jpg)
+> The `Store` is where you may find and install third-party Crawless tools and extensions, but also get ready workflows and tasks to bootstrap your ideas.
 
 #### Documentation
 
-> The `Documentation` view is where one quickly accesses the necessary information on how to operate the Crawless IDE and use the automation API provided by it in your workflows.
+> The `Documentation` view is where one quickly accesses the necessary information on how to operate the Crawless IDE and use the automation API provided by it in your code.
 
-![documentation](assets/documentation.jpg)
+## Automation
 
-## Automation Workflows
+### Workflows
 
-> In this section we will explore the automation workflows, and how to use them to achieve your goals.
+#### Tasks
 
+#### Monitoring
 
+### Storage
 
 ## Best Practices
