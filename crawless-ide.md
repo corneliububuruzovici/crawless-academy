@@ -62,11 +62,6 @@ It contains the following sections:
 
 > The `Projects` view is where you may create, manage, share, run, and monitor your automation.
 
-<figure>
-    <img src="assets/projects.gif" alt="Projects" style="width: 100%;">
-    <figcaption align="center"><b>Creating a project, and running a workflow</b></figcaption>
-</figure>
-
 To learn more about each aspect of a project, please, refer to the [Using the IDE](#using-the-ide) section.
 
 #### Store
@@ -83,15 +78,44 @@ To learn more about each aspect of a project, please, refer to the [Using the ID
 
 ### Tasks
 
-> A task is a piece of code, following the [Crawless API](https://docs.stage.crawless.com) convention, executes a specific set of actions in the same manner as a real user would do. ??
+> A task, in the context of Crawless, is a piece of code, written in `JavaScript`, following the [Crawless API](https://docs.stage.crawless.com) convention and a set of configurations that instructs the Crawless IDE and its underlying framework on how it should execute a specific set of actions in the same manner as a real user would do.
 
 > A task may be executed in a specific order, and may depend on other tasks or run in a parallel [queue](#queue).
 
-> Tasks may share data between each other using the [state](#state), and store final data in a [storage](#storage).
+> Tasks may share data between each other using the built-in [state](#state) feature, and store final data in a [storage](#storage).
+
+Begin with creation of a new project, and a workflow within it.
 
 <figure>
-    <img src="assets/tasks.gif" alt="Tasks" style="width: 100%;">
-    <figcaption align="center"><b>Tasks</b></figcaption>
+    <img src="assets/project-workflow.gif" alt="Project & Workflow" style="width: 100%;">
+    <figcaption align="center"><b>Create a project and a workflow within it</b></figcaption>
+</figure>
+
+Once created, you may add tasks to your workflow, write the necessary code, and configure them.
+
+> You will notice that every workflow comes with a default task called `main` - this is the entry point of your workflow, and the first task to be executed. You may create as many tasks as you wish, organize, and use them in any order you like.
+
+As a demonstration, we will create a task that collects the current weather in the New York City.
+
+First we will create our `collect` task, which we will include in our `main` task.
+
+Assuming we want to extract the current weather in New York City from Google, step by step, we will navigate to our desired destination and set up the necessary selectors.
+
+On the right side of our opened code editor view, you will find the `Browser` and the `Selectors` panes. The `Browser` pane allows us to navigate to the desired destination, and the `Selectors` pane allows us to select the necessary elements.
+
+
+Navigate to the right side of the IDE, the `Selectors` pane, which will open our browser and allow us to select the necessary elements.
+
+<figure>
+    <img src="assets/browser-selectors.gif" alt="Browser & Selectors" style="width: 100%;">
+    <figcaption align="center"><b>Toggle the Browser and Selectors panes</b></figcaption>
+</figure>
+
+Next, 
+
+<figure>
+    <img src="assets/selectors.gif" alt="Selectors" style="width: 100%;">
+    <figcaption align="center"><b>Create and run a task to collect weather data</b></figcaption>
 </figure>
 
 ### Queue
@@ -101,6 +125,8 @@ To learn more about each aspect of a project, please, refer to the [Using the ID
 ### Storage
 
 > A storage is where we optionally store any data collected during the process of our workflow in order to cache and re-use data or export it as our final result, and may be a database, a file, or a cloud storage.
+
+Following the previous example, we will create a storage to store the weather data collected by our task.
 
 ### Logs
 
