@@ -118,6 +118,16 @@ This is a brief example of how one may create a task, and use the Crawless IDE t
 
 ### Queue
 
+> The concept of a queue is a way to execute tasks in parallel so nothing blocks the execution of the program, and may be used to speed up the process of automation.
+
+> It also helps us make sure that the tasks will be executed even if any of it fails for any configured amount of times.
+
+> Finally, the queue functionality allows us to schedule the execution of tasks at a specific time, or at a specific interval.
+
+Following our previous example, we will create a queue to execute our `collect` task in parallel and fetch weather data for multiple cities.
+
+![queue-1](assets/queue-1.gif)
+
 ### State
 
 ### Storage
