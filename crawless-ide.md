@@ -74,7 +74,7 @@ To learn more about each aspect of a project, please, refer to the [Using the ID
 
 ## Using the IDE
 
-> The process of automation within the Crawless IDE begins with the creation of a **project** and a **workflow** within it, followed by creation of **tasks** out of which a workflow consists, and an optional **storage** instance to cache intermediate or store final data.
+> The process of automation within the Crawless IDE begins with the creation of a project and a workflow within it, followed by creation of tasks out of which a workflow consists, and an optional storage instance to cache intermediate or store final data.
 
 ### Tasks
 
@@ -86,12 +86,9 @@ To learn more about each aspect of a project, please, refer to the [Using the ID
 
 Begin with creation of a new project, and a workflow within it.
 
-<figure>
-    <img src="assets/project-workflow.gif" alt="Project & Workflow" style="width: 100%;">
-    <figcaption align="center"><b>Create a project and a workflow within it</b></figcaption>
-</figure>
+![tasks-1](assets/tasks-1.gif)
 
-Once created, you may add tasks to your workflow, write the necessary code, and configure them.
+Once created, you may add tasks to your workflow, fill in with code, and configure them to your needs.
 
 > You will notice that every workflow comes with a default task called `main` - this is the entry point of your workflow, and the first task to be executed. You may create as many tasks as you wish, organize, and use them in any order you like.
 
@@ -99,24 +96,25 @@ As a demonstration, we will create a task that collects the current weather in t
 
 First we will create our `collect` task, which we will include in our `main` task.
 
-Assuming we want to extract the current weather in New York City from Google, step by step, we will navigate to our desired destination and set up the necessary selectors.
+![tasks-2](assets/tasks-2.gif)
 
-On the right side of our opened code editor view, you will find the `Browser` and the `Selectors` panes. The `Browser` pane allows us to navigate to the desired destination, and the `Selectors` pane allows us to select the necessary elements.
+On the right side of our opened code editor view, you will find the `Browser` and the `Selectors` panes. The `Browser` pane allows us to navigate to the desired destination and visualize the performance of our tasks, and the `Selectors` pane allows us to interactively find and save the necessary elements into variables, so we can reuse them later.
 
+Assuming we want to extract the current weather in New York City from Google, step by step, we will navigate to our desired destination, set up the necessary selectors, and write our code.
 
-Navigate to the right side of the IDE, the `Selectors` pane, which will open our browser and allow us to select the necessary elements.
+We will need to select the search input field, and the search button, so we can type in our query and submit it.
 
-<figure>
-    <img src="assets/browser-selectors.gif" alt="Browser & Selectors" style="width: 100%;">
-    <figcaption align="center"><b>Toggle the Browser and Selectors panes</b></figcaption>
-</figure>
+![tasks-3](assets/tasks-3.gif)
 
-Next, 
+Next, we will add the code which will enter our query into the search field and submit it.
 
-<figure>
-    <img src="assets/selectors.gif" alt="Selectors" style="width: 100%;">
-    <figcaption align="center"><b>Create and run a task to collect weather data</b></figcaption>
-</figure>
+![tasks-4](assets/tasks-4.gif)
+
+Once done, let's select the first result from the search results page, in our case the text with the current temperature in New York City, and log it to the console.
+
+![tasks-5](assets/tasks-5.gif)
+
+This is a brief example of how one may create a task, and use the Crawless IDE to interactively find and save the necessary elements into variables, write the code, and begin with the automation, but this is just scratching the surface, follow to the next chapters to learn how to scale your automation to a different level.
 
 ### Queue
 
@@ -124,7 +122,7 @@ Next,
 
 ### Storage
 
-> A storage is where we optionally store any data collected during the process of our workflow in order to cache and re-use data or export it as our final result, and may be a database, a file, or a cloud storage.
+> A storage is where we optionally store any data collected during the process of our workflow, usually the fruit of our automation, and may be a `SQL` or `NoSQL` database, a file, or a cloud storage.
 
 Following the previous example, we will create a storage to store the weather data collected by our task.
 
