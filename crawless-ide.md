@@ -74,13 +74,15 @@ To learn more about each aspect of a project, please, refer to the [Using the ID
 
 ## Using the IDE
 
-> The process of automation within the Crawless IDE begins with the creation of a project and a workflow within it, followed by creation of tasks out of which a workflow consists, and an optional storage instance to cache intermediate or store final data.
+> The process of automation within the Crawless begins with the creation of a project and a workflow within it, followed by creation of tasks out of which a workflow consists, and an optional storage instance to store collected or intermediate data.
+
+> Note that you can also import an existing workflow or work on a project that had been shared with you.
 
 ### Tasks
 
-> A task, in the context of Crawless, is a piece of code, written in `JavaScript`, following the [Crawless API](https://docs.stage.crawless.com) convention and a set of configurations that instructs the Crawless IDE and its underlying framework on how it should execute a specific set of actions in the same manner as a real user would do.
+> A task, in the context of Crawless, is a piece of code, written in `JavaScript`, following the [Crawless API](https://docs.stage.crawless.com) convention and a set of configurations that instructs the Crawless and its underlying framework on how it should execute a specific set of actions in the same manner as a real user would do.
 
-> A task may be executed in a specific order, and may depend on other tasks or run in a parallel [queue](#queue).
+> A task may be executed in a specific order, and may depend on other tasks or run in a [queue](#queue).
 
 > Tasks may share data between each other using the built-in [state](#state) feature, and store final data in a [storage](#storage).
 
@@ -91,6 +93,8 @@ Begin with creation of a new project, and a workflow within it.
 Once created, you may add tasks to your workflow, fill in with code, and configure them to your needs.
 
 > You will notice that every workflow comes with a default task called `main` - this is the entry point of your workflow, and the first task to be executed. You may create as many tasks as you wish, organize, and use them in any order you like.
+
+> Also, note that you may configure and run your tasks directly from their own editor view, by clicking on the task, or from the workflow dashboard view, by clicking on the workflow in the sidebar and selecting the task you wish to run.
 
 As a demonstration, we will create a task that collects the current weather in the New York City.
 
@@ -114,19 +118,25 @@ Once done, let's select the first result from the search results page, in our ca
 
 ![tasks-5](assets/tasks-5.gif)
 
-This is a brief example of how one may create a task, and use the Crawless IDE to interactively find and save the necessary elements into variables, write the code, and begin with the automation, but this is just scratching the surface, follow to the next chapters to learn how to scale your automation to a different level.
+This is a brief demonstration on how to get started with automation in Crawless, but we are just scratching the surface, follow to the next chapters to learn how to scale to a different level.
 
 ### Queue
 
-> The concept of a queue is a way to execute tasks in parallel so nothing blocks the execution of the program, and may be used to speed up the process of automation.
+> The [queue](https://docs.stage.crawless.com/#/app/queue) feature is a way to execute multiple tasks in background and make sure they run repeatedly if the execution failed, thus not blocking the main execution of the program, and can be also used to schedule tasks to run at a specific time or interval.
 
-> It also helps us make sure that the tasks will be executed even if any of it fails for any configured amount of times.
+Following our previous example, we will create a queue to execute multiple `collect` tasks in the background thus fetch weather data for multiple cities.
 
-> Finally, the queue functionality allows us to schedule the execution of tasks at a specific time, or at a specific interval.
-
-Following our previous example, we will create a queue to execute our `collect` task in parallel and fetch weather data for multiple cities.
+Let's include the necessary code in our `main` task.
 
 ![queue-1](assets/queue-1.gif)
+
+And run the workflow from the workflow dashboard view.
+
+![queue-2](assets/queue-2.gif)
+
+As you can see, the `collect` task is executed multiple times, and the data is logged to the console.
+
+Feel free to tinker on your own, and try to create a queue that will run at a specific time or interval using the [schedule](https://docs.stage.crawless.com/#/app/queue?id=schedule) feature.
 
 ### State
 
@@ -142,7 +152,7 @@ Following the previous example, we will create a storage to store the weather da
 
 > As soon as you created a project, you may wish to monitor the activity of its workflows and the usage of the computational resources for each process, as well as being informed with notifications about the state of your automation.
 
-In Crawless, we offer two ways to monitor your workflows, one is by creating a dashboard entry on the `Dashboards` view, which allows you to visualize multiple metrics for multiple workflows simultaneously in a single location, and per workflow by clicking on it in the `Projects` view.
+In Crawless, we offer two ways to monitor your workflows, one is by creating a dashboard entry on the `Dashboards` view, which allows you to visualize multiple metrics for multiple workflows simultaneously in a single location, and per workflow in the workflow dashboard view.
 
 <figure>
     <img src="assets/dashboards.gif" alt="Dashboards" style="width: 100%;">
@@ -153,12 +163,12 @@ In Crawless, we offer two ways to monitor your workflows, one is by creating a d
 
 - **Organization** - keep your workflows organized by splitting them into smaller tasks, and grouping them into modules.
 - **Modularity** - make your tasks reusable by making them independent of each other, and using them in multiple workflows.
-- **Optimization** - optimize your tasks by making them run in parallel [queues](https://docs.stage.crawless.com/#/app/queue), use the [state](https://docs.stage.crawless.com/#/app/state) to cache and share data between tasks, and make use of the [storage](https://docs.stage.crawless.com/#/app/storage) to store final data.
+- **Optimization** - optimize your tasks by making them run in [queues](https://docs.stage.crawless.com/#/app/queue), use the [state](https://docs.stage.crawless.com/#/app/state) to cache and share data between tasks, and make use of the [storage](https://docs.stage.crawless.com/#/app/storage) to store final data.
 - **Documentation** - document your code, so that others may understand it, and you may remember it.
 - **Consistency** - be consistent with your code style, and naming conventions, so that you may easily navigate your codebase.
 - **Testing** - test your code, so that you may be confident in its correctness, and others may trust it.
 - **Debugging** - use the [logs](https://docs.stage.crawless.com/#/app/log) to debug your code, so that you may quickly find and fix issues.
 - **Versioning** - version your code, so that you may track its changes, and others may contribute to it.
 - **Community** - use store based third party tools and extensions provided by the community and Crawless team, so that you may save time, and others may benefit from your work.
-- **Monitor** - take full advantage of the metrics features within the Crawless IDE to monitor your workflows, so that you may be aware of their state, and be notified of any issues.
+- **Monitor** - take full advantage of the metrics features within the Crawless to monitor your workflows, so that you may be aware of their state, and be notified of any issues.
 - **Learn** - always consult the latest [documentation](https://docs.stage.crawless.com) and changelogs, so that you may be aware of the latest features, thus improving your productivity.
