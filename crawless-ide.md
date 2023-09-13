@@ -26,7 +26,7 @@
 
 > The user interface consists of three main areas, the activity bar, the sidebar, and the view container.
 
-![user-interface](assets/user-interface.jpg)
+![user-interface](assets/user-interface.png)
 
 #### Activity Bar
 
@@ -140,13 +140,19 @@ Feel free to tinker on your own, and try to create a queue that will run at a sp
 
 ### State
 
-> State instance provides methods to work with key-value data. The data is saved across your workflow, and you may use it to share stuff between tasks.
+> [State](https://docs.stage.crawless.com/#/app/state) instance provides methods to work with key-value data. The data is saved across your workflow, and you may use it to share stuff between tasks.
+
+> Note that the state can be made global therefore shared across any project.
 
 Let's use the state feature to store weather data, collected by our `collect` task, and instead of directly logging it to the console, we will log it from the `main` task.
 
-![state-1](assets/state-1.jpg)
+First send the data to the state from the `collect` task.
 
-![state-2](assets/state-2.jpg)
+![state-1](assets/state-1.png)
+
+Then, retrieve the data from the state in the `main` task, and log it to the console.
+
+![state-2](assets/state-2.png)
 
 ### Storage
 
@@ -160,7 +166,7 @@ Let's create a simple file storage on our local machine with the `JSON` format.
 
 Next, add the necessary code to our `main` task to save collected weather data into the storage and visualize it.
 
-![storage-2](assets/storage-2.jpg)
+![storage-2](assets/storage-2.png)
 
 In the `Storage` view, you will find the `Files` pane, which allows you to navigate and manage your storage files and instances.
 
@@ -170,24 +176,21 @@ Crawless supports a variety of storage types, and you may find more information 
 
 > The [logs](https://docs.stage.crawless.com/#/app/log) feature allows you to debug your code by logging messages to the console, and monitor the activity of your workflows.
 
+There are two ways to monitor your logs, one is by opening the task view and monitoring the logs in the `Logs` pane.
 
+![logs-1](assets/logs-1.png)
+
+And another is by opening the workflow dashboard view and monitoring the logs in the `Logs` pane.
+
+![logs-2](assets/logs-2.png)
 
 ### Metrics
 
 > As soon as you created a project, you may wish to monitor the activity of its workflows and the usage of the computational resources for each process, as well as being informed with notifications about the state of your automation.
 
-In Crawless, we offer two ways to monitor your workflows.
+In Crawless, we offer two ways to monitor your workflows, one is by opening the workflow dashboard view and monitoring the metrics in the `Summary` pane, and another is by creating a dashboard entry on the `Dashboards` view, which allows you to visualize multiple metrics for multiple workflows simultaneously in a single location.
 
-One is by opening the workflow view and monitoring the metrics in the `Summary` pane.
-
-![metrics-1](assets/metrics-1.jpg)
-
-And another is by creating a dashboard entry on the `Dashboards` view, which allows you to visualize multiple metrics for multiple workflows simultaneously in a single location.
-
-<figure>
-    <img src="assets/metrics-2.gif" alt="Metrics 2" style="width: 100%;">
-    <figcaption align="center"><b>Setting up and using a dashboard to quickly monitor your workflows</b></figcaption>
-</figure>
+![metrics](assets/metrics.gif)
 
 ## Best Practices
 
