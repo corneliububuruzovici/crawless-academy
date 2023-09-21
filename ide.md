@@ -1,8 +1,11 @@
-# Crawless in action
-
-> The following is a comprehensive guide on getting started and becoming proficient with the Crawless IDE.
+# Crawless IDE
 
 - [Introduction](#introduction)
+- [Installation](#installation)
+  - [For Mac](#for-mac)
+  - [For Windows](#for-windows)
+  - [For Linux](#for-linux)
+- [Get Started](#get-started)
   - [User Interface](#user-interface)
   - [Views](#views)
     - [Home](#home)
@@ -20,7 +23,42 @@
 
 ## Introduction
 
-> Crawless, like any other IDE (integrated development environment), essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necessary tools at hand.
+At its core, Crawless is an integrated development environment (IDE) and a cloud infrastructure for web automation.
+
+It is a desktop application that allows you to build web automation projects and run them locally or distribute them across multiple machines.
+
+Thus, like any other integrated development environment (IDE), Crawless essentially is a text editor with extra features, that serves as an environment to achieve your goals without compromising productivity, by having all necessary tools at hand.
+
+Here are some use cases that Crawless can help you with, but not limited to any:
+- **Web Scraping** - Crawless can help you to extract data from websites and save it in a structured format.
+- **Web Testing** - Crawless can help you to automate your web testing process.
+- **Web Monitoring** - Crawless can help you to monitor websites and notify you when something changes.
+- **Web Automation** - Crawless can help you to automate your web tasks.
+
+The following is a comprehensive guide on getting started and becoming proficient with the Crawless IDE.
+
+Let's dive in and see how it works.
+
+## Installation
+
+### For Mac
+
+- Download the latest version of Crawless for Mac from [here]().
+- Double-click on the downloaded file and drag `Crawless.app` to the Applications directory.
+
+### For Windows
+
+- Download the Crawless installer for Windows from [here]().
+- Double-click on the downloaded file and follow the instructions.
+
+### For Linux
+
+- Download the Crawless installer for Linux from [here]().
+- Double-click on the downloaded file and follow the instructions.
+
+## Get Started
+
+Let's get started by opening the Crawless IDE and exploring its user interface.
 
 ### User Interface
 
